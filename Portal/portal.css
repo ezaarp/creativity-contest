@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+html {
+    background: url(/assets/background.png) no-repeat center center fixed; 
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Add this animation to the .container element */
+.container {
+    /* Your existing styles */
+
+    /* Add the initial animation */
+    animation: zoom-fade 1s ease forwards;
+    transform-origin: center;
+    opacity: 0;
+}
+
+/* Define the keyframes for the zoom-fade animation */
+@keyframes zoom-fade {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.main {
+    display: flex;
+    position: fixed;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 27px;
+    height: 142px;
+    width: 142px;
+    bottom: 22rem;
+    box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+}
+
+.logo img {
+    position: relative;
+    width: 88px;
+}
+
+.bottom-logo img {
+    width: 5rem;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: column;
+    width: 637px;
+    height: 150px;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    bottom: 5rem;
+    margin-top: 10px;
+}
+
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+.masuk {
+    font-family: 'poppins', sans-serif;
+    background-color: #EE1C25 ;
+    border: 0;
+    outline: 0;
+    width: 158px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 17px;
+    color: white;
+    font-weight: 700;
+    transition: .5s;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+}
+
+.masuk:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.daftar {
+    font-family: 'poppins', sans-serif;
+    background-color: #B22D30 ;
+    width: 158px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 17px;
+    color: white;
+    font-weight: 700;
+    transition: .5s;
+    font-size: 20px;
+    box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+    -moz-box-shadow: 0px -1px 14px -3px rgba(0,0,0,0.42);
+}
+
+.daftar:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.bottom-logo {
+    position: absolute;
+    top: 35rem;
+    font-size: 28px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+

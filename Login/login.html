@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+
+    <script src="login.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Loading animation container -->
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div class="video-wrapper">
+        <video playsinline autoplay muted>
+          <source src="/assets/background ani ver1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="main hidden">
+        <div class="main">
+            <div class="container">
+
+                <div class="back" onclick="back ()">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+
+                <div class="logo">
+                    <img src="/assets/mytelu-removebg-preview.png" alt="logo">
+                </div>
+
+                <p class="sso">Single Sign-On</p>
+
+                <div class="login-data">
+                    <label> test id : user</label>
+                    <label> test password : test</label>
+                </div>
+
+                <div class="login-input">
+                    <input class="id" type="text" id="email" required>
+                    <span>Username</span>
+                </div>
+
+                <div class="login-input">
+                    <input class="password" type="password" id="password" required>
+                    <span>Password</span>
+                </div>
+
+                <button type="submit" class="sign-btn" onclick="auth()">
+                    <p>Sign In</p>
+                </button>
+
+                <div class="forgot-password">
+                    <a href="#">Lupa kata sandi?</a>
+                </div>
+
+            </div>
+
+            
+            <div class="copyright">
+                <p><span>&copy;</span> 2023 Team Creativity Contest 417016-02</p>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
